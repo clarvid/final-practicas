@@ -1,0 +1,31 @@
+:root{
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #7dd3fc;
+  --text: #e6eef8;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Segoe UI,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,var(--bg),#08101a);color:var(--text);}
+main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+h1{font-size:2rem;margin:0 0 8px}
+.main-header{text-align:center;margin-bottom:14px}
+.subtitle{opacity:.8;margin:0 0 8px}
+.panels{display:flex;gap:20px;width:100%;max-width:1100px}
+.panel{flex:1;background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center}
+.panel h2{margin:0 0 8px;font-size:1.05rem}
+.countdown{display:flex;gap:16px;background:transparent;padding:6px;border-radius:12px}
+.segment{display:flex;flex-direction:column;align-items:center;padding:8px 12px}
+.segment span{font-size:2rem;font-weight:600;color:var(--accent)}
+.segment small{opacity:.8}
+.note{margin-top:8px;opacity:.9}
+.finished{margin-top:14px;padding:10px 14px;background:#0a9f78;border-radius:8px;color:#032118;font-weight:700}
+
+.alarm-controls{margin-top:12px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.alarm-controls label{font-size:0.95rem;display:flex;align-items:center;gap:8px}
+.next-alarm{font-size:0.9rem;opacity:.9}
+.alarm-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:24px;background:#ffecdc;color:#3a1800;padding:14px 18px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.3)}
+.alarm-banner .alarm-content{display:flex;gap:12px;align-items:center}
+.alarm-banner button{background:#3a1800;color:#fff;border:none;padding:6px 10px;border-radius:6px;cursor:pointer}
+
+@media (max-width:860px){.panels{flex-direction:column}.countdown{justify-content:center}.segment span{font-size:1.6rem}}
+

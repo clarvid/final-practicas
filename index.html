@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cuenta regresiva - 29 de marzo de 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</main>
+
+  <main>
+    <header class="main-header">
+      <h1>Cuenta regresiva</h1>
+      <p class="subtitle">Objetivo: 29 de marzo de 2026</p>
+    </header>
+
+    <section class="panels">
+      <article class="panel">
+        <h2>Conteo continuo</h2>
+        <div id="countdown-cont" class="countdown">
+          <div class="segment"><span id="cont-days">--</span><small>días</small></div>
+          <div class="segment"><span id="cont-hours">--</span><small>horas</small></div>
+          <div class="segment"><span id="cont-minutes">--</span><small>minutos</small></div>
+          <div class="segment"><span id="cont-seconds">--</span><small>segundos</small></div>
+        </div>
+        <div id="finished-cont" class="finished" hidden>¡Llegamos al 29 de marzo de 2026!</div>
+      </article>
+
+      <article class="panel">
+        <h2>Conteo — horas laborales</h2>
+        <p class="note">Cuenta sólo durante tu horario: 8:00–18:00 (viernes 8:00–17:00)</p>
+        <div id="countdown-work" class="countdown">
+          <div class="segment"><span id="work-day-name">--</span><small>día laboral</small></div>
+          <div class="segment"><span id="work-hours">--</span><small>horas</small></div>
+          <div class="segment"><span id="work-minutes">--</span><small>minutos</small></div>
+          <div class="segment"><span id="work-seconds">--</span><small>segundos</small></div>
+        </div>
+        <div class="alarm-controls">
+          <label><input type="checkbox" id="alarm-toggle"> Activar alarma 10 minutos antes del fin laboral</label>
+          <div id="next-alarm" class="next-alarm">Próxima alarma: —</div>
+        </div>
+
+        <div id="alarm-banner" class="alarm-banner" hidden>
+          <div class="alarm-content">
+            <strong>Alarma:</strong> quedan 10 minutos para terminar la jornada
+            <button id="alarm-dismiss">Descartar</button>
+          </div>
+        </div>
+        <div id="finished-work" class="finished" hidden>No quedan horas laborales antes del objetivo.</div>
+      </article>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
