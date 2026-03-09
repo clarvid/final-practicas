@@ -1,7 +1,7 @@
-// Cuenta regresiva continua hasta 29 de marzo de 2026 (hora local)
+// Cuenta regresiva continua hasta 17 de marzo de 2026 (hora local)
 (function(){
   // Meses en JS: 0 = enero, 2 = marzo
-  const target = new Date(2026, 2, 29, 0, 0, 0, 0);
+  const target = new Date(2026, 2, 17, 0, 0, 0, 0);
 
   // Continuous countdown elements
   const contDays = document.getElementById('cont-days');
